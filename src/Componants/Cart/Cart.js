@@ -1,10 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import img from './profile.jpg'
 import './Cart.css'
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationPin } from '@fortawesome/free-solid-svg-icons'
 
-const Cart = () => {
+const Cart = (props) => {
+    const { cart } = props;
+    const [breaktime, setbreakTime] = useState(0);
+    console.log(cart)
+    let total = 0;
+    for (const product of cart) {
+        total = total + product.time;
+        // console.log(product.time)
+    }
+    
+    const totalhandler = (time) => {
+        setbreakTime(time);
+        localStorage.setItem('breaktime',time)
+    }
+
+
+    // local storage added 
+    useEffect(() => {
+        const getvalue = localStorage.getItem('breaktime');
+        console.log(getvalue)
+    setbreakTime(getvalue);
+},[])
+
+
     return (
         <div className='cart-body'>
             <div className="cart-profile">
@@ -17,6 +42,7 @@ const Cart = () => {
                     <small>   chittagon, bangladesh</small>
                 </div>
             </div>
+            <br />
             <div className='person-weight'>
                 <span>
                     75<small> kg</small>
@@ -32,14 +58,21 @@ const Cart = () => {
                     Age
                 </span>
             </div>
+            <br /><br />
             <small>Add a Break</small>
             <div className='btn-single'>
-                <button>10s</button>
-                <button className='primary-btn'>20s</button>
-                <button>30s</button>
-                <button>40s</button>
+                <button value={10} onClick={(e)=>totalhandler(e.target.value)}>10s</button>
+                <button value={20} onClick={(e)=>totalhandler(e.target.value)} className='primary-btn'>20s</button>
+                <button value={30} onClick={(e)=>totalhandler(e.target.value)}>30s</button>
+                <button value={40} onClick={(e)=>totalhandler(e.target.value)}>40s</button>
             </div>
+            <br /><br />
             <small>Exercise Details</small>
+            <br />
+            <p>Exercise Time :{ total}</p>
+            <p>Break Time :{ breaktime} </p>
+            <button onClick={()=>toast('Yeh! your Activity was copmplete')}>Activity Completed</button>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };
