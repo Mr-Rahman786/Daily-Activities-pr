@@ -1,0 +1,63 @@
+.profile-image{
+    width: 50px;
+    border-radius: 100px;
+    position: relative;
+    right: 30%;
+    top: 10px;
+}
+.cart-body{
+    position: sticky;
+    top: 0;
+}
+.cart-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+}
+.small{
+    font-size: 12px;
+}
+.person-weight{
+    margin-top: 5%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    /* padding: 5%; */
+    background-color: grey;
+}
+.person-weight span{
+    padding: 5%;
+}
+.person-weight span:hover{
+    background-color: tomato;
+    border-radius: 20px;
+    /* color: black; */
+    transition: 0.7s;
+}
+.single-span{
+    background-color: pink;
+    color: black;
+    border-radius: 20px;
+}
+.btn-single{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: gray;
+}
+.primary-btn{
+    background-color: rgb(0, 174, 255);
+}
+.btn-single button{
+    margin: 3%;
+    padding: 4%;
+    border-radius: 40px;
+    border: none;
+}
+.btn-single button:hover{
+    background-color: rgb(237, 11, 215);
+}
