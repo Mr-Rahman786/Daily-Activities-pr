@@ -11,16 +11,19 @@ const Shop = () => {
     },[])
     return (
         <div className='shop-container'>
-            <div className="product-container">
-                {
+            <div>
+                <h1 className='header-title'>Today Activity</h1>
+                <div className="product-container">
+                    {
                 products.map(product => <Product
                     product={product}
                     key={product.id}
                 ></Product>)
             }
+                </div>
             </div>
             <div className="card-conatainer">
-                <h1>Card body</h1>
+                
             </div>
         </div>
     );

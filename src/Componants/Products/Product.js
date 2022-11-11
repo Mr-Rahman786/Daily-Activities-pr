@@ -6,11 +6,15 @@ const Product = (props) => {
     return (
         <div className='product'>
             <img src={picture} alt="" />
-            <p>{activity}</p>
+            <div className="product-body">
+            <p className='activity'>{activity}</p>
             <p>{ title}</p>
             <p>For Age : {age}</p>
             <p>Time spoild : { time}</p>
+            </div>
+            <button className='card-btn'>Add to list</button>
         </div>
+        
     );
 };
 
