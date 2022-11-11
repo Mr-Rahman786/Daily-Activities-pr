@@ -1,0 +1,10 @@
+.shop-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.card-conatainer{
+    background-color: violet;
+}
+.product-container{
+    background-color: tomato;
+}
