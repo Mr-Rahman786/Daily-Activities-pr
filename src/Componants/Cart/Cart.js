@@ -9,7 +9,7 @@ import { faLocationPin } from '@fortawesome/free-solid-svg-icons'
 const Cart = (props) => {
     const { cart } = props;
     const [breaktime, setbreakTime] = useState(0);
-    console.log(cart)
+    // console.log(cart)
     let total = 0;
     for (const product of cart) {
         total = total + product.time;
@@ -25,7 +25,7 @@ const Cart = (props) => {
     // local storage added 
     useEffect(() => {
         const getvalue = localStorage.getItem('breaktime');
-        console.log(getvalue)
+        // console.log(getvalue)
     setbreakTime(getvalue);
 },[])
 

@@ -1,3 +1,7 @@
+// import { ToastContainer, toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
+
+
 import React from 'react';
 import './Product.css'
 const Product = (props) => {
@@ -12,7 +16,8 @@ const Product = (props) => {
             <p className='age-time'>For Age : {age}</p>
             <p className='age-time'>Time spoild : { time}</p>
             </div>
-            <button onClick={()=>props.handlerClick(props.product)} className='card-btn'>Add to list</button>
+            <button onClick={() => props.handlerClick(props.product)} className='card-btn'>Add to list</button>
+            {/* <ToastContainer></ToastContainer> */}
         </div>
         
     );
