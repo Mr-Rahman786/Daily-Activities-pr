@@ -1,0 +1,20 @@
+.question-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5%;
+}
+.question-container div{
+    background-color: lightslategrey;
+    margin: 5%;
+    padding: 5%;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px ;
+}
+.question-container p{
+    text-align: start;
+}
+@media screen and (max-width:376px) {
+    .question-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

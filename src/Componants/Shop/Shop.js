@@ -20,7 +20,7 @@ const Shop = () => {
     }
     return (
         <div className='shop-container'>
-            <div>
+            <div className='single-cart'>
                 <h1 className='header-title'>Today Activity</h1>
                 <div className="product-container">
                     {

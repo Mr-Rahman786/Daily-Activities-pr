@@ -1,6 +1,7 @@
 .header-title{
     text-align: start;
 }
+
 .shop-container{
     display: grid;
     grid-template-columns: 3fr 1fr;
