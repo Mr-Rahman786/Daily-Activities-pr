@@ -1,0 +1,9 @@
+nav{
+    height: 60px;
+}
+.brand-logo {
+    width: 200px;
+    position: relative;
+    right: 45%;
+    bottom: 120%;
+}
