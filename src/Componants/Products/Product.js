@@ -8,9 +8,9 @@ const Product = (props) => {
             <img src={picture} alt="" />
             <div className="product-body">
             <p className='activity'>{activity}</p>
-            <p>{ title}</p>
-            <p>For Age : {age}</p>
-            <p>Time spoild : { time}</p>
+            <p className='title'>{ title}</p>
+            <p className='age-time'>For Age : {age}</p>
+            <p className='age-time'>Time spoild : { time}</p>
             </div>
             <button onClick={()=>props.handlerClick(props.product)} className='card-btn'>Add to list</button>
         </div>

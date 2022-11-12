@@ -39,7 +39,7 @@ const Cart = (props) => {
                 <div>
                     <small className='small'>Mohammad Mustafijur Rahman</small><br />
                     <FontAwesomeIcon icon={faLocationPin}></FontAwesomeIcon>    
-                    <small>   chittagon, bangladesh</small>
+                    <small>   Chittagong, Bangladesh</small>
                 </div>
             </div>
             <div className='person-weight'>
@@ -68,8 +68,8 @@ const Cart = (props) => {
             <br />
             <small>Exercise Details</small>
             <br />
-            <p>Exercise Time :{ total}</p>
-            <p>Break Time :{ breaktime} </p>
+            <p className='exersice-time'>Exercise Time : { total}</p>
+            <p>Break Time : { breaktime} </p>
             <button onClick={()=>toast('Yeh! your Activity was copmplete')}>Activity Completed</button>
             <ToastContainer></ToastContainer>
         </div>

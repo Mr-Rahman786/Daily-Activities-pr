@@ -61,14 +61,30 @@
 .btn-single button:hover{
     background-color: rgb(237, 11, 215);
 }
+.exersice-time{
+    background-color: grey;
+}
+
+
 
 @media screen and (max-width:376px) {
     .profile-image{
         width: 30px;
+        left: 10%;
+        bottom: 15%;
+    }
+    .cart-profile small{
+        font-size: 10px;
     }
     .person-weight{
         /* flex-direction: column; */
         background-color: black;
+    }
+    .cart-profile{
+        flex-direction: column;
+    }
+    .small{
+        font-size: 10px;
     }
     .person-weight span{
         font-size: 10px;
