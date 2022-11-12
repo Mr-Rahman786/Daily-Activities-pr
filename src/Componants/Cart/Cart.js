@@ -42,7 +42,6 @@ const Cart = (props) => {
                     <small>   chittagon, bangladesh</small>
                 </div>
             </div>
-            <br />
             <div className='person-weight'>
                 <span>
                     75<small> kg</small>
@@ -58,7 +57,7 @@ const Cart = (props) => {
                     Age
                 </span>
             </div>
-            <br /><br />
+            <br />
             <small>Add a Break</small>
             <div className='btn-single'>
                 <button value={10} onClick={(e)=>totalhandler(e.target.value)}>10s</button>
@@ -66,7 +65,7 @@ const Cart = (props) => {
                 <button value={30} onClick={(e)=>totalhandler(e.target.value)}>30s</button>
                 <button value={40} onClick={(e)=>totalhandler(e.target.value)}>40s</button>
             </div>
-            <br /><br />
+            <br />
             <small>Exercise Details</small>
             <br />
             <p>Exercise Time :{ total}</p>
