@@ -70,7 +70,7 @@ const Cart = (props) => {
             <br />
             <p className='exersice-time'>Exercise Time : { total}</p>
             <p>Break Time : { breaktime} </p>
-            <button onClick={()=>toast('Yeh! your Activity was copmplete')}>Activity Completed</button>
+            <button className='activity' onClick={()=>toast.success('Yeh! your Activity was complete')}>Activity Completed</button>
             <ToastContainer></ToastContainer>
         </div>
     );

@@ -65,7 +65,11 @@
     background-color: grey;
 }
 
-
+.activity{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
 
 @media screen and (max-width:376px) {
     .profile-image{

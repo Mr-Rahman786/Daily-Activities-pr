@@ -5,6 +5,7 @@
 .shop-container{
     display: grid;
     grid-template-columns: 3fr 1fr;
+    background-color: rgb(96, 78, 78);
 }
 .card-conatainer{
     background-color:rgb(12, 15, 19);

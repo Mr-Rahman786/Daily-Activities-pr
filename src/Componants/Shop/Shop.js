@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { toast } from 'react-toastify';
 import Cart from '../Cart/Cart';
 import Product from '../Products/Product';
 import './Shop.css'
+
 const Shop = () => {
     const [products, setproduct] = useState([]);
     const [cart, setcart] = useState([]);
@@ -14,6 +16,7 @@ const Shop = () => {
     const handlerClick = (product) => {
         const newCart = [...cart, product]
         setcart(newCart);
+        toast.success('Your spoild time was added Exercise time')
     }
     return (
         <div className='shop-container'>
